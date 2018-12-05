@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3DB0C66521B8137100CA6411 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3DB0C66421B8137100CA6411 /* GoogleService-Info.plist */; };
 		3F7A38F321B79E330095AC5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7A38F221B79E330095AC5E /* AppDelegate.swift */; };
 		3F7A38F521B79E330095AC5E /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7A38F421B79E330095AC5E /* ChatViewController.swift */; };
 		3F7A38F821B79E330095AC5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F7A38F621B79E330095AC5E /* Main.storyboard */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3DB0C66421B8137100CA6411 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3DB0C66621B8177100CA6411 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		3F7A38EF21B79E330095AC5E /* chitchat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chitchat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F7A38F221B79E330095AC5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F7A38F421B79E330095AC5E /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +93,7 @@
 		3F7A38E621B79E330095AC5E = {
 			isa = PBXGroup;
 			children = (
+				3DB0C66621B8177100CA6411 /* Bridging-Header.h */,
 				3F7A38F121B79E330095AC5E /* chitchat */,
 				3F7A390621B79E340095AC5E /* chitchatTests */,
 				3F7A391121B79E340095AC5E /* chitchatUITests */,
@@ -118,6 +122,7 @@
 				3F7A38F921B79E340095AC5E /* Assets.xcassets */,
 				3F7A38FB21B79E340095AC5E /* LaunchScreen.storyboard */,
 				3F7A38FE21B79E340095AC5E /* Info.plist */,
+				3DB0C66421B8137100CA6411 /* GoogleService-Info.plist */,
 			);
 			path = chitchat;
 			sourceTree = "<group>";
@@ -219,19 +224,22 @@
 				TargetAttributes = {
 					3F7A38EE21B79E330095AC5E = {
 						CreatedOnToolsVersion = 9.4.1;
+						ProvisioningStyle = Automatic;
 					};
 					3F7A390221B79E340095AC5E = {
 						CreatedOnToolsVersion = 9.4.1;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 3F7A38EE21B79E330095AC5E;
 					};
 					3F7A390D21B79E340095AC5E = {
 						CreatedOnToolsVersion = 9.4.1;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 3F7A38EE21B79E330095AC5E;
 					};
 				};
 			};
 			buildConfigurationList = 3F7A38EA21B79E330095AC5E /* Build configuration list for PBXProject "chitchat" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -256,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F7A38FD21B79E340095AC5E /* LaunchScreen.storyboard in Resources */,
+				3DB0C66521B8137100CA6411 /* GoogleService-Info.plist in Resources */,
 				3F7A38FA21B79E340095AC5E /* Assets.xcassets in Resources */,
 				3F7A38F821B79E330095AC5E /* Main.storyboard in Resources */,
 			);
@@ -508,12 +517,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = chitchat/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hk.edu.ssc.stu.chitchat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -526,12 +534,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = chitchat/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hk.edu.ssc.stu.chitchat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -544,11 +551,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = chitchatTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hk.edu.ssc.stu.chitchatTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -564,11 +567,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = chitchatTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hk.edu.ssc.stu.chitchatTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -583,11 +582,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = chitchatUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hk.edu.ssc.stu.chitchatUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -602,11 +597,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = chitchatUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hk.edu.ssc.stu.chitchatUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
