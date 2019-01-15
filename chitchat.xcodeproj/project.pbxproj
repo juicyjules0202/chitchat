@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3D70461E21B8DF3400F645FA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D70461D21B8DF3400F645FA /* Constants.swift */; };
-		3DB0C66521B8137100CA6411 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3DB0C66421B8137100CA6411 /* GoogleService-Info.plist */; };
+		3F79ED8021EDC9B900BAB0F8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F79ED7F21EDC9B900BAB0F8 /* GoogleService-Info.plist */; };
 		3F7A38F321B79E330095AC5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7A38F221B79E330095AC5E /* AppDelegate.swift */; };
 		3F7A38F521B79E330095AC5E /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7A38F421B79E330095AC5E /* ChatViewController.swift */; };
 		3F7A38F821B79E330095AC5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F7A38F621B79E330095AC5E /* Main.storyboard */; };
@@ -39,7 +39,7 @@
 /* Begin PBXFileReference section */
 		3D70461D21B8DF3400F645FA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3D70461F21B8ECC100F645FA /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
-		3DB0C66421B8137100CA6411 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3F79ED7F21EDC9B900BAB0F8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3F7A38EF21B79E330095AC5E /* chitchat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chitchat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F7A38F221B79E330095AC5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F7A38F421B79E330095AC5E /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
@@ -125,7 +125,7 @@
 				3F7A38F921B79E340095AC5E /* Assets.xcassets */,
 				3F7A38FB21B79E340095AC5E /* LaunchScreen.storyboard */,
 				3F7A38FE21B79E340095AC5E /* Info.plist */,
-				3DB0C66421B8137100CA6411 /* GoogleService-Info.plist */,
+				3F79ED7F21EDC9B900BAB0F8 /* GoogleService-Info.plist */,
 			);
 			path = chitchat;
 			sourceTree = "<group>";
@@ -267,7 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F7A38FD21B79E340095AC5E /* LaunchScreen.storyboard in Resources */,
-				3DB0C66521B8137100CA6411 /* GoogleService-Info.plist in Resources */,
+				3F79ED8021EDC9B900BAB0F8 /* GoogleService-Info.plist in Resources */,
 				3F7A38FA21B79E340095AC5E /* Assets.xcassets in Resources */,
 				3F7A38F821B79E330095AC5E /* Main.storyboard in Resources */,
 			);
@@ -508,8 +508,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
